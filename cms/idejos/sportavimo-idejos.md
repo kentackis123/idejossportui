@@ -27,7 +27,7 @@ f_video-2:
   url: https://youtu.be/sQ4zKg1Lrtg
 f_video-3:
   url: https://www.youtube.com/watch?v=ZMQk5jAIcGY
-f_nuoroda: https://idejossportui.netlify.app/idejos/sportavimo-idejos
+f_nuoroda: https://idejossportui.lt/idejos/sportavimo-idejos
 f_eiles-tvarka-2: 1
 tags: idejos
 layout: "[idejos].html"
