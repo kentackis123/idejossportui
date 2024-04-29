@@ -1,0 +1,2061 @@
+backend:
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
+  branch: master
+media_folder: theme/assets/images
+public_folder: /assets/images
+collections:
+  - name: pages
+    label: Pages
+    identifier_field: title
+    extension: md
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    folder: cms/pages
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '{{slug}}.html'
+      - &ref_0
+        label: Seo
+        name: seo
+        widget: object
+        collapsed: true
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: No index
+            name: noindex
+            widget: boolean
+            default: false
+            required: false
+          - label: Open Graph Title
+            name: og:title
+            widget: string
+            required: false
+          - label: Open Graph Image
+            name: og:image
+            widget: image
+            required: false
+            media_library:
+              config:
+                multiple: false
+          - label: Twitter Title
+            name: twitter:title
+            widget: string
+            default: summary
+            required: false
+          - label: Twitter Card
+            name: twitter:card
+            widget: string
+            default: summary
+            required: false
+          - label: Twitter Site
+            name: twitter:site
+            widget: string
+            required: false
+          - label: Twitter Creator
+            name: twitter:creator
+            widget: string
+            required: false
+          - label: Twitter Image
+            name: twitter:image
+            widget: image
+            required: false
+            media_library:
+              config:
+                multiple: false
+          - label: Additional HTML tags
+            name: additional_tags
+            widget: text
+            required: false
+  - name: prekes
+    label: Prekės
+    folder: cms/prekes
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Aprašymas 1
+        name: body
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_aprasymas-2
+        label: Aprašymas 2
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_kaina
+        label: Kaina
+        widget: string
+        required: false
+      - hint: ''
+        name: f_kategorija-2
+        label: Kategorija
+        widget: relation
+        required: false
+        collection: idejos
+        value_field: cms/idejos/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: false
+      - hint: ''
+        name: f_panasios-prekes
+        label: Panašios prekės
+        widget: relation
+        required: false
+        collection: prekes
+        value_field: cms/prekes/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: true
+      - hint: ''
+        name: f_nuotrauka-1
+        label: Nuotrauka 1
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_nuotrauka-2
+        label: Nuotrauka 2
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_nuotrauka-3
+        label: Nuotrauka 3
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_nuotrauka-4
+        label: Nuotrauka 4
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_nuotrauka-5
+        label: Nuotrauka 5
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_nuotrauka-6
+        label: Nuotrauka 6
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_video-1
+        label: Video 1
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Url
+            widget: string
+            required: false
+      - hint: ''
+        name: f_video-2
+        label: Video 2
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Url
+            widget: string
+            required: false
+      - hint: ''
+        name: f_video-3
+        label: Video 3
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Url
+            widget: string
+            required: false
+      - hint: ''
+        name: f_ar-yra-sandelyje
+        label: Ar yra sandėlyje?
+        widget: boolean
+        required: false
+        default: false
+      - hint: ''
+        name: f_spalva
+        label: Spalva
+        widget: select
+        required: false
+        options:
+          - label: Žalia
+            value: Žalia
+          - label: Mėlyna
+            value: Mėlyna
+      - hint: ''
+        name: f_spalva-2
+        label: 'Spalva #2'
+        widget: select
+        required: false
+        options:
+          - label: Žalia
+            value: Žalia
+          - label: Mėlyna
+            value: Mėlyna
+      - hint: ''
+        name: f_subkategorija
+        label: Subkategorija
+        widget: select
+        required: false
+        options:
+          - label: Elektrinis
+            value: Elektrinis
+          - label: Mechaninis
+            value: Mechaninis
+          - label: Šiaurietiškas ėjimas
+            value: Šiaurietiškas ėjimas
+          - label: Trekingas
+            value: Trekingas
+          - label: Irklai
+            value: Irklai
+      - hint: ''
+        name: f_akcijos-kaina
+        label: Akcijos kaina
+        widget: string
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: prekes
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[prekes].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: idejos
+    label: Kategorijos
+    folder: cms/idejos
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Aprašymas 1
+        name: body
+        widget: markdown
+        required: false
+      - hint: 'Apie ką? Pvz: paspirtukus, irklentes, krepšius ir t.t.'
+        name: f_daugiskaitine-galininko-forma
+        label: Daugiskaitinė galininko forma
+        widget: string
+        required: false
+      - hint: ''
+        name: f_pilnas-kategorijos-pavadinimas
+        label: Pilnas kategorijos pavadinimas
+        widget: string
+        required: false
+      - hint: ''
+        name: f_aprasymas-2
+        label: Aprašymas 2
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_aprasymas-3
+        label: Aprašymas 3
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_paveikslelis-1
+        label: Paveikslėlis 1
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_paveikslelis-2
+        label: Paveikslėlis 2
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_paveikslelis-3
+        label: Paveikslėlis 3
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_paveikslelis-4
+        label: Paveikslėlis 4
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_paveikslelis-5
+        label: Paveikslėlis 5
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_paveikslelis-6
+        label: Paveikslėlis 6
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_paveikslelis-7
+        label: Paveikslėlis 7
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_paveikslelis-8
+        label: Paveikslėlis 8
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_paveikslelis-9
+        label: Paveikslėlis 9
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_video-1
+        label: Video 1
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Url
+            widget: string
+            required: false
+      - hint: ''
+        name: f_video-2
+        label: Video 2
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Url
+            widget: string
+            required: false
+      - hint: ''
+        name: f_video-3
+        label: Video 3
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Url
+            widget: string
+            required: false
+      - hint: ''
+        name: f_oficiali-puslapio-nuoroda
+        label: Oficiali puslapio nuoroda
+        widget: string
+        required: false
+      - hint: ''
+        name: f_parsisiusti-nuoroda-i-faila-1
+        label: Parsisiųsti/nuoroda į failą 1
+        widget: string
+        required: false
+      - hint: ''
+        name: f_parsisiusti-nuoroda-i-faila-2
+        label: Parsisiųsti/nuoroda į failą 2
+        widget: string
+        required: false
+      - hint: ''
+        name: f_kategorija-ar-subkategorija
+        label: Kategorija ar subkategorija?
+        widget: select
+        required: false
+        options:
+          - label: Subkategorija
+            value: Subkategorija
+          - label: Kategorija
+            value: Kategorija
+      - hint: ''
+        name: f_ar-pagrindiniame-puslapyje
+        label: Ar pagrindiniame puslapyje?
+        widget: boolean
+        required: false
+        default: false
+      - hint: ''
+        name: f_nuoroda
+        label: Nuoroda
+        widget: string
+        required: false
+      - hint: ''
+        name: f_eiles-tvarka-2
+        label: Eiles tvarka
+        widget: number
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: idejos
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[idejos].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: atsiliepimai
+    label: Atsiliepimais
+    folder: cms/atsiliepimai
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Atsiliepimas
+        name: body
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_miestas
+        label: Miestas
+        widget: string
+        required: false
+      - hint: ''
+        name: f_data
+        label: Data
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_foto
+        label: Foto
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: atsiliepimai
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[atsiliepimai].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - label: Theme Settings
+    name: settings
+    identifier_field: title
+    extension: json
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    files:
+      - label: General
+        name: site
+        file: cms/_data/settings/site.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: General
+          - hint: Full domain url (needed for a correct sitemap file)
+            name: domain
+            label: Domain
+            widget: string
+            required: false
+          - name: favicon
+            label: Favicon
+            widget: image
+            allow_multiple: false
+            required: false
+          - name: apple_touch_icon
+            label: Apple Touch Icon
+            widget: image
+            allow_multiple: false
+            required: false
+          - name: header_additional_content
+            label: Additional Content Header
+            hint: Content here will be placed before </head> tag
+            widget: text
+            required: false
+          - name: footer_additional_content
+            label: Additional Content Footer
+            hint: Content here will be placed before </body> tag
+            widget: text
+            required: false
+          - name: images_optimization
+            label: Images Optimization
+            widget: object
+            collapsed: false
+            fields:
+              - label: Image Formats
+                name: formats
+                widget: select
+                multiple: true
+                options:
+                  - label: Avif
+                    value: avif
+                  - label: Webp
+                    value: webp
+              - label: Image Dimensions
+                name: dimensions
+                widget: select
+                multiple: true
+                options:
+                  - label: '500'
+                    value: 500
+                  - label: '800'
+                    value: 800
+                  - label: '1080'
+                    value: 1080
+                  - label: '1600'
+                    value: 1600
+                  - label: '2000'
+                    value: 2000
+                  - label: '2600'
+                    value: 2600
+      - label: Colors
+        name: colors
+        file: cms/_data/colors.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Colors
+      - label: Texts
+        name: texts
+        file: cms/_data/texts.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Texts
+          - hint: 'Original text: Prekės, key: -7106397c'
+            label: Text
+            name: '-7106397c'
+            widget: string
+          - hint: 'Original text: No items found., key: 3d503d2b'
+            label: Text
+            name: 3d503d2b
+            widget: string
+          - hint: 'Original text: Paslaugos, key: 32fa59ed'
+            label: Text
+            name: 32fa59ed
+            widget: string
+          - hint: 'Original text: Apie mANE, key: 78a10f80'
+            label: Text
+            name: 78a10f80
+            widget: string
+          - hint: 'Original text: Kontaktai, key: 117e328'
+            label: Text
+            name: '117e328'
+            widget: string
+          - hint: >-
+              Original text: Idėjos laisvalaikiui, sportui, aktyvus,
+              laisvalaikis, netradicinis, sportas,, key: 74890a19
+            label: Text
+            name: 74890a19
+            widget: string
+          - hint: 'Original text: Idėjos vasaros sezonui, key: -1dc8c816'
+            label: Text
+            name: '-1dc8c816'
+            widget: string
+          - hint: >-
+              Original text: Irklentės nuoma - puiki idėja vasarai!, key:
+              73fde405
+            label: Text
+            name: 73fde405
+            widget: string
+          - hint: 'Original text: 30 € - para, 50 € - savaitgalis., key: -44c3807c'
+            label: Text
+            name: '-44c3807c'
+            widget: string
+          - hint: 'Original text: Daugiau informacijos čia, key: -1b888d9'
+            label: Text
+            name: '-1b888d9'
+            widget: string
+          - hint: 'Original text: arba teirautis telefonu, key: -28274dc6'
+            label: Text
+            name: '-28274dc6'
+            widget: string
+          - hint: "Original text: «\_Grįžti į, key: 50178613"
+            label: Text
+            name: '50178613'
+            widget: string
+          - hint: 'Original text: EUR, key: 10da2'
+            label: Text
+            name: 10da2
+            widget: string
+          - hint: >-
+              Original text: Atsiprašome, tačiau šiuo metu prekės neturime, key:
+              7aa40ce7
+            label: Text
+            name: 7aa40ce7
+            widget: string
+          - hint: "Original text: «\_Informuokite mane kada atsiras -, key: 56afa4d7"
+            label: Text
+            name: 56afa4d7
+            widget: string
+          - hint: 'Original text: Susisiekite, key: -61d519ba'
+            label: Text
+            name: '-61d519ba'
+            widget: string
+          - hint: 'Original text: Paklausti apie prekę, key: 7db5727a'
+            label: Text
+            name: 7db5727a
+            widget: string
+          - hint: >-
+              Original text: arba susisiekite tiesiogiai +370 698 37100, key:
+              2bf7b026
+            label: Text
+            name: 2bf7b026
+            widget: string
+          - hint: 'Original text: Panašios prekės, key: -181f840c'
+            label: Text
+            name: '-181f840c'
+            widget: string
+          - hint: 'Original text: Peržiūrėti, key: -30da4f63'
+            label: Text
+            name: '-30da4f63'
+            widget: string
+          - hint: 'Original text: Panašių prekių neturime, key: -34ec9e44'
+            label: Text
+            name: '-34ec9e44'
+            widget: string
+          - hint: 'Original text: Reaguojame I-VII – 9-20 val. , key: -51a62662'
+            label: Text
+            name: '-51a62662'
+            widget: string
+          - hint: 'Original text: Prieš atvykstant BŪTINA , key: 2daee99e'
+            label: Text
+            name: 2daee99e
+            widget: string
+          - hint: 'Original text: skambinti , key: 4527c368'
+            label: Text
+            name: 4527c368
+            widget: string
+          - hint: 'Original text: tel. 8 698 37100, key: 13a277ed'
+            label: Text
+            name: 13a277ed
+            widget: string
+          - hint: 'Original text: Veiverių g. 150-308, Kaunas, key: -335393dd'
+            label: Text
+            name: '-335393dd'
+            widget: string
+          - hint: 'Original text: Idėjos, key: -7d6c9cee'
+            label: Text
+            name: '-7d6c9cee'
+            widget: string
+          - hint: 'Original text: Apie mus, key: 3db2a3d6'
+            label: Text
+            name: 3db2a3d6
+            widget: string
+          - hint: 'Original text: Bendraukime!, key: -48703ca2'
+            label: Text
+            name: '-48703ca2'
+            widget: string
+          - hint: >-
+              Original text: Thank you! Your submission has been received!, key:
+              5a0ea5a1
+            label: Text
+            name: 5a0ea5a1
+            widget: string
+          - hint: >-
+              Original text: Oops! Something went wrong while submitting the
+              form., key: -7c112e99
+            label: Text
+            name: '-7c112e99'
+            widget: string
+          - hint: 'Original text: Teirautis dėl, key: -7fadf5d7'
+            label: Text
+            name: '-7fadf5d7'
+            widget: string
+          - hint: >-
+              Original text: Dėkojame. Jūsų užklausą gavome ir susisieksime
+              artimiausiu metu., key: -4266ad55
+            label: Text
+            name: '-4266ad55'
+            widget: string
+          - hint: >-
+              Original text: Oops. Neplanuota klaida. Bandykite dar kartą ar ,
+              key: -11ff17d8
+            label: Text
+            name: '-11ff17d8'
+            widget: string
+          - hint: 'Original text: susisiekite su mumis, key: 9c79ceb'
+            label: Text
+            name: 9c79ceb
+            widget: string
+          - hint: 'Original text: ., key: 2e'
+            label: Text
+            name: 2e
+            widget: string
+          - hint: 'Original text: Plačiau, key: 4610ad75'
+            label: Text
+            name: 4610ad75
+            widget: string
+          - hint: 'Original text: Irklai ir priedai, key: -6e43e4fb'
+            label: Text
+            name: '-6e43e4fb'
+            widget: string
+          - hint: 'Original text: Akcija, key: 74fd6b67'
+            label: Text
+            name: 74fd6b67
+            widget: string
+          - hint: 'Original text: Teirautis, key: 1ccfbcb0'
+            label: Text
+            name: 1ccfbcb0
+            widget: string
+          - hint: 'Original text: Turime, key: -6a02c3d0'
+            label: Text
+            name: '-6a02c3d0'
+            widget: string
+          - hint: 'Original text: €, key: 20ac'
+            label: Text
+            name: 20ac
+            widget: string
+          - hint: 'Original text: Naudingos idėjos jau greitai -, key: -6b429d3a'
+            label: Text
+            name: '-6b429d3a'
+            widget: string
+          - hint: 'Original text: susisiekite., key: 1d668e88'
+            label: Text
+            name: 1d668e88
+            widget: string
+          - hint: >-
+              Original text: Šių prekių šiuo metu neturime. Norėdami užsisakyti
+              ar pasiteirauti - , key: -6b2c711d
+            label: Text
+            name: '-6b2c711d'
+            widget: string
+          - hint: 'Original text: Mažiau apie, key: 6ead9b8'
+            label: Text
+            name: 6ead9b8
+            widget: string
+          - hint: 'Original text: Daugiau apie, key: 33209a5d'
+            label: Text
+            name: 33209a5d
+            widget: string
+          - hint: >-
+              Original text: MB ,,Idėjos sportui", įm.k. 305109896, key:
+              1b0ed035
+            label: Text
+            name: 1b0ed035
+            widget: string
+          - hint: 'Original text: P.Galaunės g. 33, Kaunas, 46319, key: 2df7b0b5'
+            label: Text
+            name: 2df7b0b5
+            widget: string
+          - hint: 'Original text: PVM kodas LT100012396315, key: 7df762f6'
+            label: Text
+            name: 7df762f6
+            widget: string
+          - hint: >-
+              Original text: Atsiskaitomoji sąskaita LT103500010004916492, key:
+              5a1c7c83
+            label: Text
+            name: 5a1c7c83
+            widget: string
+          - hint: 'Original text: Bankas: ,,Paysera LT", UAB, key: -5e0958ad'
+            label: Text
+            name: '-5e0958ad'
+            widget: string
+          - hint: "Original text: Darbo laikas: \_, key: bc531b3"
+            label: Text
+            name: bc531b3
+            widget: string
+          - hint: >-
+              Original text: I-VII - 9-20 val. - prieš atvykstant būtina
+              skambinti, key: 1d2bf722
+            label: Text
+            name: 1d2bf722
+            widget: string
+          - hint: 'Original text: tel. , key: 6922b0d'
+            label: Text
+            name: 6922b0d
+            widget: string
+          - hint: 'Original text: +370 698 37100, key: -3cf7c81d'
+            label: Text
+            name: '-3cf7c81d'
+            widget: string
+          - hint: 'Original text: ‍, key: 200d'
+            label: Text
+            name: 200d
+            widget: string
+          - hint: 'Original text: Adresas: Veiverių 150-308, Kaunas, key: -405eb749'
+            label: Text
+            name: '-405eb749'
+            widget: string
+          - hint: >-
+              Original text: El. paštas: laimontas@idejossportui.lt, key:
+              200aeb99
+            label: Text
+            name: 200aeb99
+            widget: string
+          - hint: 'Original text: Norite paklausti:, key: 39348b0f'
+            label: Text
+            name: 39348b0f
+            widget: string
+          - hint: 'Original text: Vardas:, key: 715362eb'
+            label: Text
+            name: 715362eb
+            widget: string
+          - hint: 'Original text: *El pašto adresas:, key: -1618ea71'
+            label: Text
+            name: '-1618ea71'
+            widget: string
+          - hint: 'Original text: *Telefono numeris:, key: 17ef295f'
+            label: Text
+            name: 17ef295f
+            widget: string
+          - hint: 'Original text: Klausimas/užklausa:, key: -544cdaed'
+            label: Text
+            name: '-544cdaed'
+            widget: string
+          - hint: 'Original text: *Pasirinkite bent vieną., key: 28a377f1'
+            label: Text
+            name: 28a377f1
+            widget: string
+          - hint: >-
+              Original text: Ačiū! Per vieną darbo dieną su Jumis susisieksime.,
+              key: -20f5fdd8
+            label: Text
+            name: '-20f5fdd8'
+            widget: string
+          - hint: >-
+              Original text: Oops! Kažkas nutiko ne taip. Prašome bandyti dar
+              kartą., key: -392d1fa
+            label: Text
+            name: '-392d1fa'
+            widget: string
+          - hint: >-
+              Original text: Norint paremti 1,2 % GPM mūsų socialinę veiklą:,
+              key: 43420c39
+            label: Text
+            name: 43420c39
+            widget: string
+          - hint: >-
+              Original text: VšĮ ,,Visada aktyvus“, įm.k. 302666210, key:
+              4df8f093
+            label: Text
+            name: 4df8f093
+            widget: string
+          - hint: 'Original text: A.s. LT28 7044 0600 0773 2337, key: 5f8f8af5'
+            label: Text
+            name: 5f8f8af5
+            widget: string
+          - hint: 'Original text: AB SEB bankas, banko kodas 70440, key: 788be28b'
+            label: Text
+            name: 788be28b
+            widget: string
+          - hint: 'Original text: Vizija, key: -673e8a07'
+            label: Text
+            name: '-673e8a07'
+            widget: string
+          - hint: "Original text: Viskas prasideda nuo idėjos. Geri įpročiai, tobulėjimas, progresas, kartais net revoliucijos. Prieš daugiau nei 10 metų man kilo idėja pasukti nauju keliu ir tapti fizinio aktyvumo\_treneriu. Praktikuodamas naująją profesiją pradėjau pastebėti neteisingas gyvensenos tendencijas, žmonių tingumą ir nejudrumą. , key: 2ff504c2"
+            label: Text
+            name: 2ff504c2
+            widget: text
+          - hint: >-
+              Original text: Ne vienas jų, kaip pasyvaus gyvenimo būdo,
+              nesportavimo priežastį pateikė, jog neranda sau įdomios formos.
+              Tad ieškau, bandau pats veiklas ir priemones, ieškau atsakymų,
+              kurie gal būt padės jums išsijudinti. , key: -6c6ad63b
+            label: Text
+            name: '-6c6ad63b'
+            widget: text
+          - hint: 'Original text: Visus juos galite pamatyti , key: 762d4178'
+            label: Text
+            name: 762d4178
+            widget: string
+          - hint: 'Original text: idėjų puslapyje., key: -68dcb71e'
+            label: Text
+            name: '-68dcb71e'
+            widget: string
+          - hint: 'Original text: Laimontas Rakauskas, key: -45aefc58'
+            label: Text
+            name: '-45aefc58'
+            widget: string
+          - hint: 'Original text: Ne?, key: 13148'
+            label: Text
+            name: '13148'
+            widget: string
+          - hint: >-
+              Original text: 1. Neturi laiko, reiškia pirmenybę teiki kitiems
+              dalykams!, key: -7700064a
+            label: Text
+            name: '-7700064a'
+            widget: string
+          - hint: >-
+              Original text: 2. Tingi, nemėgsti sportuoti, nes sportavimą
+              tapatini su varginančia veikla?, key: -22268440
+            label: Text
+            name: '-22268440'
+            widget: string
+          - hint: >-
+              Original text: 3. Nežinai, kad judėjimas yra fiziologinis žmogaus
+              organizmo poreikis, be kurio kokybiška gyvensena NEĮMANOMA! , key:
+              5aa19915
+            label: Text
+            name: 5aa19915
+            widget: text
+          - hint: >-
+              Original text: Atsikratyti šių stereotipinių NE padės ,,IDĖJOS
+              SPORTUI – įdomiam gyvenimui“., key: 414c3d09
+            label: Text
+            name: 414c3d09
+            widget: string
+          - hint: >-
+              Original text: Šiaurietiškasis ėjimas, sportiniai triračiai
+              TRIKKE, originalūs triratukai ir balansiniai dviratukai vaikams,
+              irklentės, vandens sklandytuvai, priemonės smagiam keliavimui ar
+              pasivažinėjimui dviračiais, elektrinis transportas– čia tikrai
+              rasite minčių įdomiam sportavimui ar aktyviam laisvalaikiui,
+              patarsime kodėl, nuo ko ir kaip pradėti., key: 5dda1cce
+            label: Text
+            name: 5dda1cce
+            widget: text
+          - hint: 'Original text: Atsiliepimai, key: 30edb01d'
+            label: Text
+            name: 30edb01d
+            widget: string
+          - hint: 'Original text: Puslapis nerastas, key: 524471a2'
+            label: Text
+            name: 524471a2
+            widget: string
+          - hint: >-
+              Original text: Puslapio, kurio ieškote nebėra arba jis buvo
+              pašalintas., key: -41231eb6
+            label: Text
+            name: '-41231eb6'
+            widget: string
+          - hint: 'Original text: Grįžti į pagrindinį, key: -56daa257'
+            label: Text
+            name: '-56daa257'
+            widget: string
+          - hint: 'Original text: Renginiai įmonėms, key: 3e372b80'
+            label: Text
+            name: 3e372b80
+            widget: string
+          - hint: 'Original text: Irklenčių nuoma, key: 279fa880'
+            label: Text
+            name: 279fa880
+            widget: string
+          - hint: 'Original text: Šiaurietiško ėjimo mokymai, key: -1912fd64'
+            label: Text
+            name: '-1912fd64'
+            widget: string
+          - hint: 'Original text: Netradicinės priemonės, key: 3698903d'
+            label: Text
+            name: 3698903d
+            widget: string
+          - hint: 'Original text: Aktyvu, key: 7505634e'
+            label: Text
+            name: 7505634e
+            widget: string
+          - hint: >-
+              Original text: Organizuojami žygiai pėsčiomis įvairiose gražiose
+              Lietuvos vietose, trukmė apie 3-4 val., key: -7b2811d5
+            label: Text
+            name: '-7b2811d5'
+            widget: string
+          - hint: >-
+              Original text: Šiaurietiškojo ėjimo žygis ir pažintiniai mokymai,
+              trukmė 2-3 val., key: -afd12a3
+            label: Text
+            name: '-afd12a3'
+            widget: string
+          - hint: 'Original text: Plaukiojimas irklentėmis, key: 53fdb600'
+            label: Text
+            name: 53fdb600
+            widget: string
+          - hint: 'Original text: Važinėjimas triračiais TRIKKE, key: 9d29326'
+            label: Text
+            name: 9d29326
+            widget: string
+          - hint: >-
+              Original text: Plaukiojimas vandens sklandytuvu AquaSkipper, key:
+              1eb5580
+            label: Text
+            name: 1eb5580
+            widget: string
+          - hint: 'Original text: Sveika, key: -6baf6e03'
+            label: Text
+            name: '-6baf6e03'
+            widget: string
+          - hint: >-
+              Original text: Aktyvūs užsiėmimai gamtoje gerina kolektyvo dvasią
+              ir darbingumą. , key: -35b53c38
+            label: Text
+            name: '-35b53c38'
+            widget: string
+          - hint: >-
+              Original text: Aprūpiname kokybišku inventoriumi (šiaurietiškojo
+              ėjimo lazdos, irklentės ir pan.). Užsiėmimus veda patyrę
+              instruktoriai., key: -42113279
+            label: Text
+            name: '-42113279'
+            widget: text
+          - hint: 'Original text: Komandai, key: 1e567e76'
+            label: Text
+            name: 1e567e76
+            widget: string
+          - hint: >-
+              Original text: Galite pasirinkti vieną ar kelias veiklas jūsų
+              aktyviai dienai ar visam savaitgaliui!, key: 30ac6ad8
+            label: Text
+            name: 30ac6ad8
+            widget: string
+          - hint: >-
+              Original text: Atvyksime ten kur jūs pageidausite arba parinksime
+              gražias ir įdomias vietas. Vienu metu gali dalyvauti net iki 100
+              žmonių (pvz. žygyje)., key: 6a87355e
+            label: Text
+            name: 6a87355e
+            widget: text
+          - hint: 'Original text: Gaivu, key: 41635ae'
+            label: Text
+            name: 41635ae
+            widget: string
+          - hint: >-
+              Original text: Plaukimas su irklente – aktyvi emocinė pramoga ir
+              nuostabus būdas grožėtis gamta, atsipalaiduoti nuo įtampos,
+              rūpesčių, atrasti naujus potyrius., key: -6731c789
+            label: Text
+            name: '-6731c789'
+            widget: text
+          - hint: 'Original text: Išradinga, key: -413e6ee4'
+            label: Text
+            name: '-413e6ee4'
+            widget: string
+          - hint: >-
+              Original text: Puiki idėja savaitgaliui aktyviai ir smagiai
+              praleisti laiką. , key: -2dd81e1f
+            label: Text
+            name: '-2dd81e1f'
+            widget: string
+          - hint: >-
+              Original text: Nuomojamos irklentės yra pripučiamos universalios
+              ir stabilios, tad kiekvienas pageidaujantis gali mėgautis šia
+              pramoga. , key: 52e95516
+            label: Text
+            name: '52e95516'
+            widget: text
+          - hint: 'Original text: Paprasta, key: 472d8c72'
+            label: Text
+            name: 472d8c72
+            widget: string
+          - hint: >-
+              Original text: Pasiimi Iš Kauno ir vežiesi kur nori!, key:
+              -37c6947f
+            label: Text
+            name: '-37c6947f'
+            widget: string
+          - hint: 'Original text: Irklentės nuomos kaina:, key: -7d5080f8'
+            label: Text
+            name: '-7d5080f8'
+            widget: string
+          - hint: 'Original text: - šiokiadienis - 15 eur/diena;, key: -66c7333b'
+            label: Text
+            name: '-66c7333b'
+            widget: string
+          - hint: 'Original text: - savaitgalis - 20 eur/diena;, key: -41f8d637'
+            label: Text
+            name: '-41f8d637'
+            widget: string
+          - hint: 'Original text:  - 35 eur/savaitgalis., key: 1b149e2e'
+            label: Text
+            name: 1b149e2e
+            widget: string
+          - hint: 'Original text: Toliau - užlipk ir plauk!, key: -55e863b'
+            label: Text
+            name: '-55e863b'
+            widget: string
+          - hint: 'Original text: Naudinga, key: 7f31b361'
+            label: Text
+            name: 7f31b361
+            widget: string
+          - hint: >-
+              Original text: Šiaurietiškas ėjimas nėra tiesiog vaikščiojimas ir
+              lazdos skirtos ne ramstytis, o mankštintis/sportuoti., key:
+              -2e8227fc
+            label: Text
+            name: '-2e8227fc'
+            widget: text
+          - hint: 'Original text: Pritaikoma, key: -6364ecd3'
+            label: Text
+            name: '-6364ecd3'
+            widget: string
+          - hint: >-
+              Original text: Individualūs ir grupiniai užsiėmimai. Laiką ir
+              vietą derinsime pagal jūsų poreikį., key: -59ab45a6
+            label: Text
+            name: '-59ab45a6'
+            widget: string
+          - hint: >-
+              Original text: Išmokite kartą - vaikščiokite visada., key:
+              308d13db
+            label: Text
+            name: 308d13db
+            widget: string
+          - hint: 'Original text: Profesionalu, key: 2d376549'
+            label: Text
+            name: 2d376549
+            widget: string
+          - hint: >-
+              Original text: Sertifikuotas profesionalus treneris., key:
+              -683cacad
+            label: Text
+            name: '-683cacad'
+            widget: string
+          - hint: 'Original text: Daugiametė patirtis., key: -332cbbc2'
+            label: Text
+            name: '-332cbbc2'
+            widget: string
+          - hint: 'Original text: Geriausias inventorius., key: -498842ed'
+            label: Text
+            name: '-498842ed'
+            widget: string
+          - hint: >-
+              Original text: Netradicinių laisvalaikio priemonių nuoma/mokymai,
+              key: 2c72a090
+            label: Text
+            name: 2c72a090
+            widget: string
+          - hint: 'Original text: AquaSkipper, key: -5ab2f33e'
+            label: Text
+            name: '-5ab2f33e'
+            widget: string
+          - hint: >-
+              Original text: Netradicinis, bet labai smagus įrenginys sklandymui
+              ant vandens., key: 794254da
+            label: Text
+            name: 794254da
+            widget: string
+          - hint: 'Original text: Nuomos kaina:, key: f44c38b'
+            label: Text
+            name: f44c38b
+            widget: string
+          - hint: >-
+              Original text: 40 €/valanda su instruktoriumi Kaune., key:
+              -e74abc7
+            label: Text
+            name: '-e74abc7'
+            widget: string
+          - hint: 'Original text: Trikke, key: -6a311a66'
+            label: Text
+            name: '-6a311a66'
+            widget: string
+          - hint: >-
+              Original text: Triratė priemonė sportui, bei keliavimui. Yra tiek
+              mechaninių, tiek elektrinių., key: 7b5a4891
+            label: Text
+            name: 7b5a4891
+            widget: string
+          - hint: 'Original text: 30 €/parai;, key: 6bb891f8'
+            label: Text
+            name: 6bb891f8
+            widget: string
+          - hint: 'Original text: 50 €/savaitgaliui., key: 5f83bc57'
+            label: Text
+            name: 5f83bc57
+            widget: string
+          - hint: 'Original text: Triratukai vaikams, key: -3a19d78e'
+            label: Text
+            name: '-3a19d78e'
+            widget: string
+          - hint: >-
+              Original text: Triratukas, bet ne tas apie kurį galvojate. , key:
+              -768be15d
+            label: Text
+            name: '-768be15d'
+            widget: string
+          - hint: >-
+              Original text: Žymiai smagiau ir sveikiau nei paspirtukas ir
+              tikrai tikrai išradingiau., key: -479ce1ef
+            label: Text
+            name: '-479ce1ef'
+            widget: string
+          - hint: 'Original text: Susisiekite!, key: 2731e29b'
+            label: Text
+            name: 2731e29b
+            widget: string
+          - hint: >-
+              Original text: Rašykite ir susisieksime su Jumis per artimiausias
+              2 d.d., key: -7d26eca0
+            label: Text
+            name: '-7d26eca0'
+            widget: string
+          - hint: 'Original text: Vardas, key: -67b2fcd1'
+            label: Text
+            name: '-67b2fcd1'
+            widget: string
+          - hint: 'Original text: El. paštas*, key: -5109ec05'
+            label: Text
+            name: '-5109ec05'
+            widget: string
+          - hint: 'Original text: Tel. nr.*, key: 43e1aeed'
+            label: Text
+            name: 43e1aeed
+            widget: string
+          - hint: 'Original text: Užklausa, key: 2a06a36c'
+            label: Text
+            name: 2a06a36c
+            widget: string
+          - hint: >-
+              Original text: Dėkojame. Susisieksime su Jumis greitu metu., key:
+              -3b1efdef
+            label: Text
+            name: '-3b1efdef'
+            widget: string
+      - label: Links
+        name: links
+        file: cms/_data/links.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Links
+          - hint: 'Original link: /, key: 2f'
+            label: Link
+            name: 2f
+            widget: string
+          - hint: 'Original link: /paslaugos/, key: b7bd931'
+            label: Link
+            name: b7bd931
+            widget: string
+          - hint: 'Original link: /apie-mus/, key: -249d5289'
+            label: Link
+            name: '-249d5289'
+            widget: string
+          - hint: 'Original link: /kontaktai/, key: 10f7756'
+            label: Link
+            name: 10f7756
+            widget: string
+          - hint: 'Original link: tel:+37069837100, key: 4d26f698'
+            label: Link
+            name: 4d26f698
+            widget: string
+          - hint: 'Original link: #, key: 23'
+            label: Link
+            name: '23'
+            widget: string
+          - hint: >-
+              Original link:
+              https://www.idejossportui.lt/idejos/sportavimo-idejos, key:
+              -1ec47685
+            label: Link
+            name: '-1ec47685'
+            widget: string
+          - hint: 'Original link: https://facebook.com/idejossportui, key: 4702707d'
+            label: Link
+            name: 4702707d
+            widget: string
+          - hint: 'Original link: #renginiai, key: -26f98d63'
+            label: Link
+            name: '-26f98d63'
+            widget: string
+          - hint: 'Original link: #irklentes, key: 52ab280c'
+            label: Link
+            name: 52ab280c
+            widget: string
+          - hint: 'Original link: #siaurietiskas, key: -75225a00'
+            label: Link
+            name: '-75225a00'
+            widget: string
+          - hint: 'Original link: #netradicines, key: 1f4ca3a8'
+            label: Link
+            name: 1f4ca3a8
+            widget: string
+          - hint: 'Original link: #forma, key: 418b29da'
+            label: Link
+            name: 418b29da
+            widget: string
+          - hint: >-
+              Original link:
+              https://www.idejossportui.lt/idejos/idejos-vandenyje, key:
+              -2e3b1eeb
+            label: Link
+            name: '-2e3b1eeb'
+            widget: string
+          - hint: >-
+              Original link: https://www.idejossportui.lt/idejos/idejos-vaikams,
+              key: 1078ac45
+            label: Link
+            name: 1078ac45
+            widget: string
+      - label: Images
+        name: images
+        file: cms/_data/images.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Images
+          - label: Image
+            name: 7034e9c4
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 4d78d138
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i72e04c87
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '203e100'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 1f5c97f
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 211f881
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '2201002'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-55d32da8'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 7801cc62
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '0'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 36cbeef2
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-b7a9687'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-2b1beb3c'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-6967a93'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 7b8dd16a
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '14397959'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 60758a86
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-2c8cb98'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 137e0f6c
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-1962341e'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 3fdf9194
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 74c5ccd5
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-9acb7ce'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-99ea04d'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5e5f269d
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '33748233'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 731c9e23
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 730e86a2
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 73006f21
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 732ab5a4
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 341e3a33
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-166be708'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 3b35dfb8
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 6060786c
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '60443322'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 606e79a5
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 607c9126
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 60524aa3
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+local_backend: true
+publish_mode: editorial_workflow
