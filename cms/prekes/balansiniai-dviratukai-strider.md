@@ -50,7 +50,7 @@ slug: balansiniai-dviratukai-strider
 f_nuotrauka-2:
   url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5e8c7d2e969d8c02c195c3fb_12-poster.jpg
   alt: null
-f_akcijos-kaina: "129.00"
+f_akcijos-kaina: "139.00"
 tags: prekes
 date: 2024-05-21T08:08:55.113Z
 ---
