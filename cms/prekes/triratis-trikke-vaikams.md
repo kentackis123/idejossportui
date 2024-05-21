@@ -41,7 +41,6 @@ layout: "[prekes].html"
 slug: triratis-trikke-vaikams
 date: 2024-05-21T08:22:51.733Z
 ---
-
 Elektrinis triratis TRIKKE Colt – džiugi naujiena vaikams!
 
 Šis triratis gaminamas su sulankstomu, tvirtu T67 rėmu ir pripučiamomis padangomis. Colt turi 24V švino rūgšties bateriją ir grandininę pavarą su elektriniu varikliu ant priekinio rato.
@@ -50,4 +49,4 @@ Colt važiuoja geriausiai kai jam suteikiama pagalba atliekant įprastinius važ
 
 ‍
 
-**DEMONSTRACINIO modelio kaina tik 245 eur.**
+**DEMONSTRACINIO modelio kaina tik 149 eur (violetinis)**
