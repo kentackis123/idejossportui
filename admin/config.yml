@@ -863,23 +863,21 @@ collections:
             label: Text
             name: 7aa40ce7
             widget: string
-          - hint: "Original text: «\_Informuokite mane kada atsiras -, key: 56afa4d7"
+          - hint: 'Original text: Paklausti apie prekę, key: 7db5727a'
             label: Text
-            name: 56afa4d7
+            name: 7db5727a
             widget: string
           - hint: 'Original text: Susisiekite, key: -61d519ba'
             label: Text
             name: '-61d519ba'
             widget: string
-          - hint: 'Original text: Paklausti apie prekę, key: 7db5727a'
+          - hint: 'Original text: laimontas@idejossportui.lt, key: -5eefe99c'
             label: Text
-            name: 7db5727a
+            name: '-5eefe99c'
             widget: string
-          - hint: >-
-              Original text: arba susisiekite tiesiogiai +370 698 37100, key:
-              2bf7b026
+          - hint: 'Original text: +370 698 37100, key: -3cf7c81d'
             label: Text
-            name: 2bf7b026
+            name: '-3cf7c81d'
             widget: string
           - hint: 'Original text: Panašios prekės, key: -181f840c'
             label: Text
@@ -1044,10 +1042,6 @@ collections:
           - hint: 'Original text: tel. , key: 6922b0d'
             label: Text
             name: 6922b0d
-            widget: string
-          - hint: 'Original text: +370 698 37100, key: -3cf7c81d'
-            label: Text
-            name: '-3cf7c81d'
             widget: string
           - hint: 'Original text: ‍, key: 200d'
             label: Text
@@ -1510,6 +1504,10 @@ collections:
           - hint: 'Original link: #, key: 23'
             label: Link
             name: '23'
+            widget: string
+          - hint: 'Original link: mailto:laimontas@idejossportui.lt, key: -34469794'
+            label: Link
+            name: '-34469794'
             widget: string
           - hint: >-
               Original link:
