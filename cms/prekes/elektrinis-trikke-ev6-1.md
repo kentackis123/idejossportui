@@ -1,5 +1,5 @@
 ---
-title: Elektrinis triratis Trikke eV6.1
+title: Elektrinis triratis Trikke eV5.1
 created-on: 2019-02-18T17:08:56.745Z
 updated-on: 2020-12-05T15:58:34.728Z
 published-on: 2020-12-07T11:54:38.844Z
@@ -52,7 +52,7 @@ f_aprasymas-2: >-
   Greitai išimama/keičiama; lengva keisti (su raktu)
 
 
-  • Atstumas\*:
+  • Atstumas*:
 
 
   Greitis 18km/h nuvažiuojamas atstumas iki 35km
@@ -70,24 +70,6 @@ f_aprasymas-2: >-
   ‍
 
 
-  **Žibintai ir ekranas**:
-
-
-  • Priekinis žibintas: Lumotec IQ Fly 45LUX-LED, vienos funkcijos
-
-
-  • Galiniai žibintai: 8 Led (1W)
-
-
-  • Ekranas: LCD 8 funkcijų ekranas su apšvietimu: greičio ribotuvas, važiavimo greitis, vidutinis greitis, maksimalus greitis, nuvažiuotas atstumas, visas atstumas, įtampa, srovė
-
-
-  • Veidrodis: Galinio vaizdo veidrodis
-
-
-  ‍
-
-
   **Variklis ir priedai**:
 
 
@@ -98,7 +80,7 @@ f_aprasymas-2: >-
 
 
   • Greičio droselis:      1/3 pasukama  rankena su baterijos įkrovimo indikatoriumi
-f_kaina: 3250,00
+f_kaina: 2950,00
 f_kategorija-2: cms/idejos/elektrinio-transporto-idejos.md
 f_panasios-prekes: []
 f_nuotrauka-1:
@@ -118,7 +100,7 @@ f_nuotrauka-5:
   alt: null
 f_ar-yra-sandelyje: true
 f_subkategorija: Elektrinis
-f_akcijos-kaina: "799.00"
+f_akcijos-kaina: "790.00"
 tags: prekes
 layout: "[prekes].html"
 slug: elektrinis-trikke-ev6-1
@@ -130,14 +112,12 @@ Trikke eV – įdomus ir modernus sprendimas. Su šia paprasta transporto priemo
 
 *Trikke eV varoma elektra, todėl nekenkia gamtai. Ir, kas svarbiausia – ji pigi! 10 centų baterijos įkrovimui užteks nuvažiuoti 40 km. Maksimalus greitis – 25 km/h. Tiesiog užlipkite ir pirmyn!*
 
-Norintiems kartu pasiimti daiktus, galimi keli priedai: krepšio laikiklis, bagažinė ar tinklelis daiktams susidėti.
+Taip pat Trikke eV gali būti naudojamas teritorijos ir objektų apžiūrai, apsaugai ir net pastatų viduje.
 
-Taip pat Trikke eV gali būti naudojamas teritorijos ir objektų apžiūrai, apsaugai ir net pastatų viduje. Patobulintas EV modelis 6.1 pasaulyje plačiai naudojamas policijos, saugos tarnybų, kariškių tikslams.
-
-Elektrinis triratis eV6.1 yra prabangus elektrinių triračių TRIKKE variantas su įrengtais žibintais ir LCD ekranu. Kaip ir paprastesnis eV5.1, šis triratis yra skirtas pramogai, asmeniniam miesto transportui, verslo tikslams, saugos tarnyboms, policijai.
+Elektrinis triratis eV5.1 yra skirtas pramogai, asmeniniam miesto transportui, verslo tikslams, saugos tarnyboms, policijai.
 
 Ekologiškas, išmanus ir paprastas.
 
-Ev6.1 yra patvirtintas Vokietijoje kaip kelių transporto priemonė.
+Ev5.1 yra patvirtintas Vokietijoje kaip kelių transporto priemonė.
 
 P﻿arduodamas geltonos spalvos demonstracinis modelis.
