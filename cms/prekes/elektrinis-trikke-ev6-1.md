@@ -105,10 +105,10 @@ f_nuotrauka-1:
   url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5fcbae2666d33e61aaa02c3b_5c7d296ff5936f7dddbf3574_trikke-ev61%20(1).jpg
   alt: null
 f_nuotrauka-2:
-  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c7d2a287c9ef46947c2b987_Barcelona.jpg
+  url: /assets/images/action-t8h48vdh2011-copy.jpg
   alt: null
 f_nuotrauka-3:
-  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c6ae9390d68f23189e669d4_TRIKKE_EV_apsaugai.jpg
+  url: /assets/images/5.1ev_colours.jpg
   alt: null
 f_nuotrauka-4:
   url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5e8ec790751e1511ccc954bf_trikke-ev61%20(2).jpg
