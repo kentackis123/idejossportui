@@ -1,21 +1,8 @@
 ---
-f_ar-yra-sandelyje: true
-f_kaina: '95.00'
 title: Triratukas VARLIUKAS S
-f_akcijos-kaina: '59.00'
-slug: triratukas-varliukas-s
-f_nuotrauka-1:
-  url: >-
-    https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c7d42e484dadc11e17b0725_Ruzavas%20-%20Copy.jpg
-  alt: null
-f_nuotrauka-2:
-  url: >-
-    https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c7555716ed7074bba86f8b8_Sporto_festivalis2017.jpg
-  alt: null
-f_kategorija-2: cms/idejos/idejos-vaikams.md
-updated-on: '2023-11-19T11:00:46.189Z'
-created-on: '2019-02-26T15:04:22.099Z'
-published-on: '2023-11-19T11:01:23.973Z'
+created-on: 2019-02-26T15:04:22.099Z
+updated-on: 2023-11-19T11:00:46.189Z
+published-on: 2023-11-19T11:01:23.973Z
 f_aprasymas-2: |-
   S dydžio triratukas skirtas 3-7 metų vaikučiams.
 
@@ -31,14 +18,25 @@ f_aprasymas-2: |-
 
   *   balta/rožinė
   *   mėlyna
+f_kaina: "95.00"
+f_kategorija-2: cms/idejos/idejos-vaikams.md
+f_nuotrauka-1:
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c7d42e484dadc11e17b0725_Ruzavas%20-%20Copy.jpg
+  alt: null
+f_nuotrauka-3:
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5b563ac5d788d513a426caef_S_melynas1.jpg
+  alt: null
 f_video-1:
   url: https://youtu.be/YFuEfG2KtU0
-f_nuotrauka-3:
-  url: >-
-    https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5b563ac5d788d513a426caef_S_melynas1.jpg
+f_ar-yra-sandelyje: true
+layout: "[prekes].html"
+slug: triratukas-varliukas-s
+f_nuotrauka-2:
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c7555716ed7074bba86f8b8_Sporto_festivalis2017.jpg
   alt: null
-layout: '[prekes].html'
+f_akcijos-kaina: "49.00"
 tags: prekes
+date: 2024-05-21T08:40:19.151Z
 ---
 
 ,,Varliukas“ yra linksmas, aktyvus ir unikalus triratukas vaikams.  
