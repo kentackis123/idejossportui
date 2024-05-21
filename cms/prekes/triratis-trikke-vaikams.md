@@ -21,7 +21,7 @@ f_aprasymas-2: >-
 
 
   Greitis, nuvažiuojamas atstumas ir greitėjimas skirsis priklausomai nuo naudotojo svorio, topografijos, vėjo ir važiavimo stiliaus.
-f_kaina: "245.00"
+f_kaina: "745.00"
 f_kategorija-2: cms/idejos/idejos-vaikams.md
 f_panasios-prekes: []
 f_nuotrauka-1:
