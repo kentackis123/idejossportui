@@ -102,7 +102,7 @@ f_kaina: 3250,00
 f_kategorija-2: cms/idejos/elektrinio-transporto-idejos.md
 f_panasios-prekes: []
 f_nuotrauka-1:
-  url: ""
+  url: /assets/images/trikke-ev61-1-.jpg
   alt: null
 f_nuotrauka-2:
   url: /assets/images/action-t8h48vdh2011-copy.jpg
