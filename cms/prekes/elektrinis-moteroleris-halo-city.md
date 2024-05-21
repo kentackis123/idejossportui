@@ -1,26 +1,8 @@
 ---
-f_ar-yra-sandelyje: true
-f_video-1:
-  url: https://www.youtube.com/watch?v=ZOAdfILd3Pg
-f_kaina: 1489,00
 title: Elektrinis motoroleris Halo City (demonstracinis)
-slug: elektrinis-moteroleris-halo-city
-f_nuotrauka-1:
-  url: >-
-    https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5cb367d2e29a6ada40328b6d_onemile.jpg
-  alt: null
-f_nuotrauka-3:
-  url: >-
-    https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5cb36891a340eae771225452_halo_city.jpeg
-  alt: null
-f_nuotrauka-2:
-  url: >-
-    https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5cb36881a340ea8404224ad6_Sulankstytas.jpg
-  alt: null
-f_kategorija-2: cms/idejos/elektrinio-transporto-idejos.md
-updated-on: '2022-04-13T08:37:20.518Z'
-created-on: '2019-04-14T17:07:08.096Z'
-published-on: '2022-04-13T08:37:27.327Z'
+created-on: 2019-04-14T17:07:08.096Z
+updated-on: 2022-04-13T08:37:20.518Z
+published-on: 2022-04-13T08:37:27.327Z
 f_aprasymas-2: >-
   ##### Galite pakrauti savo motorolerį namuose arba jūsų biure.
 
@@ -57,9 +39,25 @@ f_aprasymas-2: >-
 
 
   [https://www.youtube.com/watch?v=ZOAdfILd3Pg](https://www.youtube.com/watch?v=ZOAdfILd3Pg)
-f_akcijos-kaina: 670,00
-layout: '[prekes].html'
+f_kaina: 1489,00
+f_kategorija-2: cms/idejos/elektrinio-transporto-idejos.md
+f_nuotrauka-1:
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5cb367d2e29a6ada40328b6d_onemile.jpg
+  alt: null
+f_nuotrauka-3:
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5cb36891a340eae771225452_halo_city.jpeg
+  alt: null
+f_video-1:
+  url: https://www.youtube.com/watch?v=ZOAdfILd3Pg
+f_ar-yra-sandelyje: true
+layout: "[prekes].html"
+slug: elektrinis-moteroleris-halo-city
+f_nuotrauka-2:
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5cb36881a340ea8404224ad6_Sulankstytas.jpg
+  alt: null
+f_akcijos-kaina: "399.00"
 tags: prekes
+date: 2024-05-21T08:12:44.200Z
 ---
 
 Onemile Halo City - nerealus kompaktiškas elektrinis motoroleris.
