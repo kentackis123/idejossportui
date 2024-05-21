@@ -108,7 +108,7 @@ f_nuotrauka-2:
   url: /assets/images/action-t8h48vdh2011-copy.jpg
   alt: null
 f_nuotrauka-3:
-  url: /assets/images/5.1ev_colours.jpg
+  url: ""
   alt: null
 f_nuotrauka-4:
   url: ""
