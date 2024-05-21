@@ -1,7 +1,8 @@
 ---
-f_ar-yra-sandelyje: true
-f_video-1:
-  url: https://youtu.be/YFuEfG2KtU0
+title: Triratukas VARLIUKAS L
+created-on: 2019-02-26T17:57:01.025Z
+updated-on: 2023-11-19T11:00:01.810Z
+published-on: 2023-11-19T11:01:23.973Z
 f_aprasymas-2: |-
   L dydžio VARLIUKAS skirtas 7 -12 metų vaikučiams.
 
@@ -12,25 +13,23 @@ f_aprasymas-2: |-
   Reguliuojamas vairo aukštis - 87-102 cm
 
   ‍
-f_kaina: '115.00'
-title: Triratukas VARLIUKAS L
-f_akcijos-kaina: '69.00'
-f_nuotrauka-1:
-  url: >-
-    https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c7d4669ffe9fb1ad07659dc_TV-L%20yellow%20-%20Copy.jpg
-  alt: null
-slug: triratukas-varliukas-l
-f_panasios-prekes: []
+f_kaina: "115.00"
 f_kategorija-2: cms/idejos/idejos-vaikams.md
-updated-on: '2023-11-19T11:00:01.810Z'
-created-on: '2019-02-26T17:57:01.025Z'
-published-on: '2023-11-19T11:01:23.973Z'
-f_nuotrauka-2:
-  url: >-
-    https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5ffff98612bee0f41567bf43_swing-scooter.jpg
+f_panasios-prekes: []
+f_nuotrauka-1:
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c7d4669ffe9fb1ad07659dc_TV-L%20yellow%20-%20Copy.jpg
   alt: null
-layout: '[prekes].html'
+f_nuotrauka-2:
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5ffff98612bee0f41567bf43_swing-scooter.jpg
+  alt: null
+f_video-1:
+  url: https://youtu.be/YFuEfG2KtU0
+f_ar-yra-sandelyje: true
+f_akcijos-kaina: "59.00"
 tags: prekes
+layout: "[prekes].html"
+slug: triratukas-varliukas-l
+date: 2024-05-21T08:39:53.650Z
 ---
 
 ,,Varliukas“ yra linksmas, aktyvus ir unikalus triratukas vaikams.  
