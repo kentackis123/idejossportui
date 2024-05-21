@@ -102,7 +102,7 @@ f_kaina: 3250,00
 f_kategorija-2: cms/idejos/elektrinio-transporto-idejos.md
 f_panasios-prekes: []
 f_nuotrauka-1:
-  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5fcbae2666d33e61aaa02c3b_5c7d296ff5936f7dddbf3574_trikke-ev61%20(1).jpg
+  url: ""
   alt: null
 f_nuotrauka-2:
   url: /assets/images/action-t8h48vdh2011-copy.jpg
@@ -111,10 +111,10 @@ f_nuotrauka-3:
   url: /assets/images/5.1ev_colours.jpg
   alt: null
 f_nuotrauka-4:
-  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5e8ec790751e1511ccc954bf_trikke-ev61%20(2).jpg
+  url: ""
   alt: null
 f_nuotrauka-5:
-  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5e8ec7b02c2b83bd2be8d66d_trikke-ev61.jpg
+  url: ""
   alt: null
 f_ar-yra-sandelyje: true
 f_subkategorija: Elektrinis
