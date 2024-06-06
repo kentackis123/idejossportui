@@ -1,5 +1,5 @@
 ---
-title: Vaikiškas elektrinis triratis TRIKKE COLT
+title: Vaikiškas elektrinis triratis TRIKKE COLT (demonstracinis)
 created-on: 2018-08-03T09:29:07.298Z
 updated-on: 2022-11-07T19:54:31.831Z
 published-on: 2022-11-07T19:54:36.212Z
