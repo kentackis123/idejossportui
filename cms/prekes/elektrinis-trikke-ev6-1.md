@@ -84,7 +84,7 @@ f_kaina: 2950,00
 f_kategorija-2: cms/idejos/elektrinio-transporto-idejos.md
 f_panasios-prekes: []
 f_nuotrauka-1:
-  url: /assets/images/trikke-ev61-1-.jpg
+  url: /assets/images/action-t8h48v-36v-male-female-swoosh-ams2011.jpg
   alt: null
 f_nuotrauka-2:
   url: /assets/images/action-t8h48vdh2011-copy.jpg
