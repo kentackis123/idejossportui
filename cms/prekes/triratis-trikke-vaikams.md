@@ -1,5 +1,5 @@
 ---
-title: Elektrinis triratis TRIKKE COLT vaikams
+title: Vaikiškas elektrinis triratis TRIKKE COLT
 created-on: 2018-08-03T09:29:07.298Z
 updated-on: 2022-11-07T19:54:31.831Z
 published-on: 2022-11-07T19:54:36.212Z
@@ -22,7 +22,7 @@ f_aprasymas-2: >-
 
   Greitis, nuvažiuojamas atstumas ir greitėjimas skirsis priklausomai nuo naudotojo svorio, topografijos, vėjo ir važiavimo stiliaus.
 f_kaina: "745.00"
-f_kategorija-2: cms/idejos/idejos-vaikams.md
+f_kategorija-2: cms/idejos/elektrinio-transporto-idejos.md
 f_panasios-prekes: []
 f_nuotrauka-1:
   url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c63ef136e0d8901924c9036_3-Colt-purple.jpg
@@ -35,7 +35,7 @@ f_video-1:
 f_ar-yra-sandelyje: true
 f_spalva: Mėlyna
 f_subkategorija: Elektrinis
-f_akcijos-kaina: "149.00"
+f_akcijos-kaina: "199.00"
 tags: prekes
 layout: "[prekes].html"
 slug: triratis-trikke-vaikams
@@ -45,8 +45,4 @@ Elektrinis triratis TRIKKE Colt – džiugi naujiena vaikams!
 
 Šis triratis gaminamas su sulankstomu, tvirtu T67 rėmu ir pripučiamomis padangomis. Colt turi 24V švino rūgšties bateriją ir grandininę pavarą su elektriniu varikliu ant priekinio rato.
 
-Colt važiuoja geriausiai kai jam suteikiama pagalba atliekant įprastinius važiavimo TRIKKE judesius. Variklio galia yra nedidelė, taigi papildomai atliekant judesius jūsų pajusite kaip didėja greitis. Tai daro Colt labiau sportišku ir sveiku, nei važiuojant tik elektra.
-
-‍
-
-**DEMONSTRACINIO modelio kaina tik 149 eur (violetinis)**
+Colt važiuoja geriausiai kai jam suteikiama pagalba atliekant įprastinius važiavimo TRIKKE judesius. Variklio galia yra nedidelė, taigi papildomai atliekant judesius jūsų pajusite kaip didėja greitis. Tai daro Colt labiau sportišku ir įdomiu nei važiuojant tik elektra.
