@@ -1,5 +1,5 @@
 ---
-title: Pripučiama mankštos lenta AQUAGYM
+title: Pripučiama mankštos lenta AQUAGYM (demonstracinė)
 created-on: 2019-02-27T10:29:06.833Z
 updated-on: 2022-06-24T06:34:26.697Z
 published-on: 2022-06-24T06:34:31.606Z
