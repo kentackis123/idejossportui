@@ -4,7 +4,7 @@ created-on: 2019-02-18T17:08:56.745Z
 updated-on: 2020-12-05T15:58:34.728Z
 published-on: 2020-12-07T11:54:38.844Z
 f_aprasymas-2: >-
-  Elektrinio triračio Trikke eV6.1 techniniai duomenys:
+  Elektrinio triračio Trikke eV5.1 techniniai duomenys:
 
 
   • **Svoris**:
@@ -84,8 +84,8 @@ f_kaina: 2950,00
 f_kategorija-2: cms/idejos/elektrinio-transporto-idejos.md
 f_panasios-prekes: []
 f_nuotrauka-1:
-  url: /assets/images/action-t8h48v-36v-male-female-swoosh-ams2011.jpg
-  alt: null
+  ? url
+  ? alt
 f_nuotrauka-2:
   url: /assets/images/action-t8h48vdh2011-copy.jpg
   alt: null
@@ -110,7 +110,7 @@ Elektriniai triračiai Trikke eV – tai puikus miesto transportas, būdas greit
 
 Trikke eV – įdomus ir modernus sprendimas. Su šia paprasta transporto priemone nusigausite visur. Ji ekologiška, išmani ir paprasta. Trikke eV lengva valdyti, jis greitai ir lengvai sulankstomas, tad galime nusivežti bet kur.
 
-*Trikke eV varoma elektra, todėl nekenkia gamtai. Ir, kas svarbiausia – ji pigi! 10 centų baterijos įkrovimui užteks nuvažiuoti 40 km. Maksimalus greitis – 25 km/h. Tiesiog užlipkite ir pirmyn!*
+*Trikke eV varoma elektra, todėl nekenkia gamtai. Ir, kas svarbiausia – ji pigi! 10 centų baterijos įkrovimui užteks nuvažiuoti 35 km. Maksimalus greitis – 25 km/h. Tiesiog užlipkite ir pirmyn!*
 
 Taip pat Trikke eV gali būti naudojamas teritorijos ir objektų apžiūrai, apsaugai ir net pastatų viduje.
 
