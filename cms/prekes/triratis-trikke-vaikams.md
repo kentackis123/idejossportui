@@ -25,10 +25,10 @@ f_kaina: "745.00"
 f_kategorija-2: cms/idejos/elektrinio-transporto-idejos.md
 f_panasios-prekes: []
 f_nuotrauka-1:
-  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c63ef136e0d8901924c9036_3-Colt-purple.jpg
+  url: /assets/images/colt_action-shot2.jpg
   alt: null
 f_nuotrauka-3:
-  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c7d04515ba87623e859fa03_Colt_action%20shot2.jpg
+  url: /assets/images/3-colt-purple.jpg
   alt: null
 f_video-1:
   url: https://youtu.be/Sc-JrhgV70Q
