@@ -22,7 +22,7 @@ f_aprasymas-2: >-
 
   Greitis, nuvažiuojamas atstumas ir greitėjimas skirsis priklausomai nuo naudotojo svorio, topografijos, vėjo ir važiavimo stiliaus.
 f_kaina: "745.00"
-f_kategorija-2: cms/idejos/idejos-vaikams.md
+f_kategorija-2: cms/idejos/elektrinio-transporto-idejos.md
 f_panasios-prekes: []
 f_nuotrauka-1:
   url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c63ef136e0d8901924c9036_3-Colt-purple.jpg
