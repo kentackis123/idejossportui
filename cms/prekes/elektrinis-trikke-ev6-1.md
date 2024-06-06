@@ -1,5 +1,5 @@
 ---
-title: Elektrinis triratis Trikke eV5.1
+title: Elektrinis triratis Trikke eV5.1 (demonstracinis)
 created-on: 2019-02-18T17:08:56.745Z
 updated-on: 2020-12-05T15:58:34.728Z
 published-on: 2020-12-07T11:54:38.844Z
