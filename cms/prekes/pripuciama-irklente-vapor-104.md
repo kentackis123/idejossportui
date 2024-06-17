@@ -1,4 +1,8 @@
 ---
+title: Pripučiama irklentė VAPOR 10'4" (315 cm)
+created-on: 2020-04-16T09:54:38.231Z
+updated-on: 2023-07-09T06:45:48.865Z
+published-on: 2023-07-09T06:46:45.381Z
 f_aprasymas-2: |-
   _Techniniai duomenys_
 
@@ -15,30 +19,24 @@ f_aprasymas-2: |-
   **‍**Max. plaukiko svoris: **140kg,** komfortas - **100 kg.**
 
   Garantija: **12 mėn.**
-title: Pripučiama irklentė VAPOR 10'4" (315 cm)
-slug: pripuciama-irklente-vapor-104
-updated-on: '2023-07-09T06:45:48.865Z'
-created-on: '2020-04-16T09:54:38.231Z'
-published-on: '2023-07-09T06:46:45.381Z'
-f_akcijos-kaina: 339,00
-f_ar-yra-sandelyje: true
 f_kaina: 389,00
 f_kategorija-2: cms/idejos/idejos-vandenyje.md
+f_panasios-prekes: []
+f_nuotrauka-3:
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5fb550d4f4f78f183c9d192a_Vapor_2021_!.png
+  alt: null
+f_ar-yra-sandelyje: false
+layout: "[prekes].html"
+slug: pripuciama-irklente-vapor-104
 f_nuotrauka-1:
-  url: >-
-    https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5fcbaad22eaeca8c9a667ba3_5fb550b4cf0132e955ef25d6_Vapor_2021-p-1080.png
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5fcbaad22eaeca8c9a667ba3_5fb550b4cf0132e955ef25d6_Vapor_2021-p-1080.png
   alt: null
 f_nuotrauka-2:
-  url: >-
-    https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5fb550c5dd1955299e72fec3_Aqua-Marina-Vapor-SUP-104-315cm-310l-2021.jpg
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5fb550c5dd1955299e72fec3_Aqua-Marina-Vapor-SUP-104-315cm-310l-2021.jpg
   alt: null
-f_nuotrauka-3:
-  url: >-
-    https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5fb550d4f4f78f183c9d192a_Vapor_2021_!.png
-  alt: null
-f_panasios-prekes: []
-layout: '[prekes].html'
+f_akcijos-kaina: 339,00
 tags: prekes
+date: 2024-06-17T18:43:33.666Z
 ---
 
 Aqua Marina stebina naujovėmis. Populiariausios pasaulyje pripučiamos universalios lentos yra vėl atnaujintos. Optimizuotas jų storis užtikrina nepaprastą tvirtumą be papildomo oro slėgio, o papildomas tūris tinka tiems, kurie nori dar lengvesnio plaukimo.
