@@ -37,6 +37,8 @@ seo:
 ---
 Elektrinis triratis TRIKKE Colt – džiugi naujiena vaikams, tai KAŽKAS TOKIO!
 
-Šis, sulankstomu, tvirtu T67 rėmu ir pripučiamomis padangomis, triratis COLT turi 24V švino rūgšties bateriją ir grandininę pavarą su elektriniu varikliu ant priekinio rato.
+TRIKKE Colt  puiki pramoga vaikams, dinamiška ir sportiška.
 
-COLT važiuoja geriausiai kai jam suteikiama pagalba atliekant įprastinius važiavimo TRIKKE judesius, nes papildomai atliekant judesius jūsų pajusite kaip didėja greitis. Taip važiavimas TRIKKE COLT tampa dar labiau dinamišku ir sportišku, nei važiuojant tik elektra.
+V﻿ažiuojant ir papildomai atliekant judesius į šo﻿nus, d﻿ar labiau didėja greitis ir važiavimas TRIKKE COLT tampa dar įdomesniu nei važiuojant tik elektra.
+
+COLT turi 24V švino rūgšties bateriją ir grandininę pavarą su elektriniu varikliu ant priekinio rato.
