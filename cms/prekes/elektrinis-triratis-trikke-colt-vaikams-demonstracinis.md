@@ -26,7 +26,7 @@ f_nuotrauka-1:
 f_nuotrauka-2:
   url: /assets/images/3-colt-purple.jpg
 f_ar-yra-sandelyje: true
-f_akcijos-kaina: "199.00"
+f_akcijos-kaina: "295.00"
 tags: prekes
 layout: "[prekes].html"
 date: 2024-06-06T15:17:18.073Z
