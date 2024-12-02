@@ -17,7 +17,7 @@ f_nuotrauka-1:
 f_ar-yra-sandelyje: true
 layout: "[prekes].html"
 slug: kick-scooter
-f_akcijos-kaina: "59.00"
+f_akcijos-kaina: "69.00"
 tags: prekes
 date: 2024-05-21T08:40:46.542Z
 ---
