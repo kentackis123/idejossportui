@@ -6,7 +6,7 @@ published-on: 2023-11-19T11:01:23.973Z
 f_aprasymas-2: |-
   Minamu triratuku gali mėgautis vaikai sveriantys iki 60 kg.
 
-  Spalvos – mėlyna arba raudona.
+  Spalvos – raudona.
 
   ‍
 f_kaina: "115.00"
@@ -17,15 +17,13 @@ f_nuotrauka-1:
 f_ar-yra-sandelyje: true
 layout: "[prekes].html"
 slug: kick-scooter
-f_akcijos-kaina: "59.00"
+f_akcijos-kaina: "69.00"
 tags: prekes
 date: 2024-05-21T08:40:46.542Z
 ---
-
 Labai dinamiškas, unikalus minamas triratukas 5-10 m. vaikams. Rieda stovint ir cikliškai spaudžiant kojomis pedalus.
 
-  
-Tai pramoga r lavinantis judesius bei raumenis sportavimas jūaų vaikui!
+Tai triratukas jūsų vaiko pramogai ir judesių lavinimui !
 
 ‍
 
