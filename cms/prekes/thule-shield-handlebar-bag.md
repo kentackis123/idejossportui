@@ -15,10 +15,10 @@ f_aprasymas-2: |-
   ‍**MEDŽIAGA** Nailonas, plastikas, plienas
 
   ‍**SPALVA** Black
-f_kaina: 90,00
+f_kaina: 95,00
 f_kategorija-2: cms/idejos/idejos-dviratininkams.md
 f_panasios-prekes: []
-f_ar-yra-sandelyje: true
+f_ar-yra-sandelyje: false
 layout: "[prekes].html"
 slug: thule-shield-handlebar-bag
 f_nuotrauka-1:
