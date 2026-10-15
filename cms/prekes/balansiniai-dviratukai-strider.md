@@ -44,7 +44,7 @@ f_nuotrauka-1:
   alt: null
 f_video-1:
   url: https://www.youtube.com/watch?v=HlTJWQQ3U6A
-f_ar-yra-sandelyje: true
+f_ar-yra-sandelyje: false
 layout: "[prekes].html"
 slug: balansiniai-dviratukai-strider
 f_nuotrauka-2:
