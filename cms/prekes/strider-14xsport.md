@@ -24,7 +24,7 @@ f_aprasymas-2: |-
 f_kaina: "364.98"
 f_kategorija-2: cms/idejos/idejos-vaikams.md
 f_nuotrauka-1:
-  url: ""
+  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5ffff806f421cf1f74b040c6_14x-roz%CC%8Cinis.jpg
   alt: null
 f_nuotrauka-2:
   url: ""
