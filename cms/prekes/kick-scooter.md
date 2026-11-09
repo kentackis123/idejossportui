@@ -12,7 +12,7 @@ f_aprasymas-2: |-
 f_kaina: "115.00"
 f_kategorija-2: cms/idejos/idejos-vaikams.md
 f_nuotrauka-1:
-  url: https://uploads-ssl.webflow.com/5b3ba73c24fb23a306e8d888/5c7d425b31c360a45a3611a0_023-%20-%20Copy.jpg
+  url: /assets/images/minamas.jpeg
   alt: null
 f_ar-yra-sandelyje: true
 layout: "[prekes].html"
