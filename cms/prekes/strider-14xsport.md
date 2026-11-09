@@ -36,7 +36,7 @@ f_ar-yra-sandelyje: true
 layout: "[prekes].html"
 slug: strider-14xsport
 f_spalva: null
-f_akcijos-kaina: "279.00"
+f_akcijos-kaina: "289.00"
 tags: prekes
 date: 2026-10-15T07:17:28.833Z
 ---
