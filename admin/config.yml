@@ -903,7 +903,7 @@ collections:
             label: Text
             name: 4527c368
             widget: string
-          - hint: 'Original text: tel. 8 698 37100, key: 13a277ed'
+          - hint: 'Original text: tel. +37069837100, key: 13a277ed'
             label: Text
             name: 13a277ed
             widget: string
