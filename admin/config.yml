@@ -907,7 +907,7 @@ collections:
             label: Text
             name: 13a277ed
             widget: string
-          - hint: 'Original text: Veiverių g. 150-308, Kaunas, key: -335393dd'
+          - hint: 'Original text: Galaunės g. 33, Kaunas, key: -335393dd'
             label: Text
             name: '-335393dd'
             widget: string
@@ -1047,7 +1047,7 @@ collections:
             label: Text
             name: 200d
             widget: string
-          - hint: 'Original text: Adresas: Veiverių 150-308, Kaunas, key: -405eb749'
+          - hint: 'Original text: Adresas: Galaunės 33, Kaunas, key: -405eb749'
             label: Text
             name: '-405eb749'
             widget: string
